@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>glow</title>
+    <style>
+        body{
+            margin: o;
+            padding: 0;
+            background-color: rgb(0, 0, 0, 0.9);
+        }
+        ul {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            margin: 0;
+            padding: 0px;
+            display: flex;
+        }
+        ul li {
+            list-style: none;
+            width: 40px;
+            height: 40px;
+            border-radius: 50px;
+            background-color: #ffffff;
+            animation: grow 1.6s ease-in-out infinite;
+        }
+        @keyframes grow {
+            0%,
+            40%,
+            100% {
+                transform: scale(0.2)
+            }
+            20% {
+                transform: scale(1);
+            }
+        }
+        ul li:nth-child(1) {
+            animation-delay: -1.4s;
+            background-color: rgb(0, 204, 255);
+            box-shadow: 0px 0px 15px rgb(50, 117, 205);
+        }
+        ul li:nth-child(2) {
+            animation-delay: -1.2s;
+            background-color: rgb(216, 112, 112);
+            box-shadow: 0px 0px 15px palevioletred;
+        }
+        ul li:nth-child(3) {
+            animation-delay: -1s;
+            background-color: rgb(185, 216, 112);
+            box-shadow: 0px 0px 15px palevioletred;
+        }
+        ul li:nth-child(4) {
+            animation-delay: -0.8s;
+            background-color: lightblue;
+            box-shadow: 0px 0px 15px lightblue;
+        }
+        ul li:nth-child(5) {
+            animation-delay: -0.6s;
+            background-color: violet;
+            box-shadow: 0px 0px 15px violet;
+        }
+        ul li:nth-child(6) {
+            animation-delay: -0.3s;
+            background-color: rgb(179, 119, 67,);
+            box-shadow: 0px 0px 15px violet;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <ul>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li> 
+            <li></li>
+        </ul>
+    </div>
+</body>
+</html>
